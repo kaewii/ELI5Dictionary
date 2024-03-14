@@ -1,0 +1,54 @@
+body {
+    font-family: 'Lost Castedral', sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Full viewport height */
+}
+
+header {
+    background-color: #f0f0f0;
+    color: #333;
+    padding: 20px; /* Adjusted to match the desired padding */
+    text-align: center;
+    width: calc(100% - 40px); /* Full width minus padding on both sides */
+    margin: 0 auto; /* Center the header */
+    border-radius: 10px; /* Rounded corners */
+    box-sizing: border-box; /* Include padding in the width calculation */
+    position: relative;
+    z-index: 999;
+    display: flex; /* Enables Flexbox */
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Optional shadow for depth */
+}
+
+.favorites-container {
+    width: calc(100% - 40px); /* Full width minus padding on both sides */
+    padding: 20px; /* Consistent padding */
+    margin: 20px auto; /* Adjust top/bottom margin as needed and center the container */
+    box-sizing: border-box; /* Include padding in the width calculation */
+    background-color: #F5F5F5; /* A very light grey background color for contrast */
+    border-radius: 15px; /* Rounded corners */
+}
+
+.favorites-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.favorites-list li {
+    margin: 10px 0;
+    border-bottom: 1px solid #E0DDD7; /* Pale light greyish brown color for the border */
+    padding-bottom: 10px; /* Padding at the bottom of each item */
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;
+    width: 100%;
+    clear: both; /* Ensure footer is below all content */
+}

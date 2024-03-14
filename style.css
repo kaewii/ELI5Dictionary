@@ -1,0 +1,282 @@
+body {
+    font-family: 'Lost Castedral', sans-serif;
+                                                
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Full viewport height */
+}
+
+#main-nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px; /* Reduced vertical padding */
+    height: auto; /* Adjust based on your design, or remove if not needed */
+    /* Other styles remain unchanged */
+
+    position: sticky; /* or 'fixed', depending on your needs */
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    transition: top 0.3s; /* Smooth transition for moving up */
+    border-radius: 10px; /* Rounded corners */
+    max-width: calc(100% - 20px); /* Adjust the max-width as needed */
+   
+
+        width: calc(100% - 40px); /* Full width minus padding on both sides */
+        padding: 20px 20px 10px 20px; /* Adjusted top and bottom padding as per your setup */
+        margin: 0 auto; /* Center the navigation bar */
+        box-sizing: border-box; /* Include padding in the width calculation */
+
+    
+   
+}
+
+
+.search-container {
+    text-align: center;
+    width: 90%; /* Adjust based on your design preference */
+    margin: 10px auto; /* Centering the container */
+}
+
+
+.alphabet-shortcuts {
+    text-align: center;
+    width: 90%; /* Adjust based on your design preference */
+    margin: 10px auto; /* Centering the container */
+    padding-top: 15px;
+   
+        display: flex;
+        flex-wrap: nowrap; /* Prevent wrapping to a new line */
+        justify-content: center; /* Center items */
+        gap: 5px; /* Adjust gap between items */
+        /* Other styles remain unchanged */
+    
+    
+}
+
+
+
+.search-container input[type="text"] {
+    padding: 10px;
+    font-family: 'Lost Castedral', sans-serif;
+    margin-top: 8px;
+    font-size: 17px;
+    border: 1px solid #ccc;
+    width: 100%; /* Full width of its container */
+    border-radius: 10px;
+}
+
+
+.alphabet-shortcuts a {
+    color: #fff;
+    text-decoration: none;
+    margin: 6px;
+    display: inline-block;
+   
+
+
+        padding: 5px 6px; /* Reduced padding for a shorter appearance */
+        font-size: 20px; /* Keep your font size or adjust as needed */
+        /* Other styles remain unchanged */
+
+    
+}
+
+
+
+
+
+
+.alphabet-shortcuts {
+    display: flex;
+    margin-left: 10px;
+    flex-wrap: wrap; /* Allows items to wrap to the next line if needed */
+    justify-content: center; /* Center the shortcuts horizontally */
+    gap: 10px; /* Optional: Adds space between shortcuts */
+    width: calc(100% - 40px); /* Adjust width to match other elements */
+    padding: 10px 20px; /* Consistent padding */
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.content {
+    text-align: left;
+    padding: 20px;
+    margin-top: 20px; /* Space below the navbar */
+    flex-grow: 1; /* Ensures footer is pushed to the bottom */
+}
+
+
+header {
+    width: calc(100% - 40px); /* Full width minus padding on both sides */
+    padding: 0 20px; /* 20px padding on the left and right */
+    margin: 0 auto; /* Center the header */
+    box-sizing: border-box; /* Include padding in the width calculation */
+}
+
+
+
+header h1 {
+    text-align: center;
+    margin: 0;
+ 
+    background-color: #f0f0f0; /* Optional background color */
+    z-index: 1000;
+    position: relative;
+}
+
+
+#main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px 10px 20px;
+    background-color: #333;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-radius: 10px;
+    max-width: calc(100% - 40px);
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;
+    width: 100%;
+    clear: both; /* Ensure footer is below all content */
+}
+
+
+.site-header {
+    background-color: #f0f0f0;
+    color: #333;
+    padding-top: 40px ; /* Adjust padding as needed */
+    padding-bottom: 22px;
+    text-align: center;
+    width: calc(100% - 40px); /* Creates space on the sides */
+    margin: 10px auto; /* Adds space above and below the header */
+    border-radius: 10px; /* Rounded corners */
+    position: relative;
+    z-index: 999;
+    display: flex; /* Enables Flexbox */
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Optional shadow for depth */
+}
+
+
+
+.alphabet-container {
+   
+ 
+    width: calc(100% - 40px); /* Full width minus padding on both sides */
+    padding: 10px 20px; /* 20px padding on the left and right */
+    margin: 20px auto; /* Center the container */
+    box-sizing: border-box; /* Include padding in the width calculation */
+    
+
+
+
+}
+
+.wordList {
+    list-style-type: none;
+    padding: 0;
+}
+
+.wordList li {
+    margin: 10px 0;
+}
+
+
+
+
+.bpw-chat-container {
+  
+
+    position: relative;
+    z-index: 2000;
+}
+
+
+
+.letter-container {
+    border: 2px solid #E0DDD7; /* Pale light greyish brown color for the border */
+    border-radius: 15px; /* Rounded corners */
+    padding: 20px; /* Increased padding inside the containers for more space around the content */
+    margin-bottom: 30px; /* Increased space between each container */
+    background-color: #F5F5F5; /* A very light grey background color for contrast */
+    display: flex; /* Assuming you want to use flexbox */
+    flex-direction: column; /* Stack items vertically */
+    gap: 15px; /* Space between flex items */
+}
+
+
+.letter-container ul {
+    padding-left: 20px; /* Adjust as needed */
+    margin-bottom: 15px; /* Space at the bottom of the list */
+}
+
+.letter-container ul li {
+    margin-bottom: 10px; /* Space between list items */
+}
+
+.letter-container h2 {
+    
+    margin: 0 auto; /* Ensures the header is centered within the container */
+    padding-left: 20px;
+    padding-top: 19px;
+}
+
+
+.star {
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+
+.favorites-btn a {
+    padding: 5px 15px;
+    margin-right: 70px;
+    margin-top: 90px;
+    background-color: #0f637d;
+    color: #ffffff;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.favorites-btn a:hover {
+    background-color: #196f8c;
+}
+
+
+.chatbox-container {
+    height: 300px;
+    width: 100%;
+  }
+  

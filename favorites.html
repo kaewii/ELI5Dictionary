@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favorited Definitions</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <ul id="favoritesList"></ul>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Function to display favorites
+            function displayFavorites() {
+                $('#favoritesList').empty(); // Clear the list
+                var favorites = JSON.parse(localStorage.getItem('favorites')) || [];
+                favorites.sort(); // Sort alphabetically
+                $.each(favorites, function(index, definition) {
+                    $('#favoritesList').append('<li>' + definition + '<button class="unfavorite-btn">Unfavorite</button></li>');
+                });
+            }
+
+            // Call displayFavorites to initially populate the list
+            displayFavorites();
+
+            // Event listener for unfavorite buttons
+            $('#favoritesList').on('click', '.unfavorite-btn', function() {
+                var definitionToRemove = $(this).parent().text().replace('Unfavorite', ''); // Get the definition text
+                var favorites = JSON.parse(localStorage.getItem('favorites')) || [];
+                var index = favorites.indexOf(definitionToRemove);
+                if (index > -1) {
+                    favorites.splice(index, 1); // Remove the definition from the array
+                    localStorage.setItem('favorites', JSON.stringify(favorites)); // Update localStorage
+                    displayFavorites(); // Refresh the list of favorites
+                }
+            });
+        });
+    </script>
+</body>
+</html>
