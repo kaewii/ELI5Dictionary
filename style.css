@@ -260,6 +260,12 @@ footer {
 }
 
 
+.star.filled {
+    color: #ffd700; /* Gold color for filled star */
+}
+
+
+
 .favorites-btn a {
     padding: 5px 15px;
     margin-right: 70px;
@@ -279,4 +285,20 @@ footer {
     height: 300px;
     width: 100%;
   }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   
